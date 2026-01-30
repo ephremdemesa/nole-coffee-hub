@@ -6,13 +6,13 @@ import heroBlockchain from "@/assets/hero-blockchain.jpg";
 const heroSlides = [
   {
     image: heroCoffeeFarm,
-    title: "From Farm to Cup",
-    subtitle: "Direct partnerships with world-class coffee farmers",
+    title: "From Ethiopia to America",
+    subtitle: "Premium green coffee, 200+ containers annually to US roasters",
   },
   {
     image: heroBlockchain,
     title: "Powered by Technology",
-    subtitle: "Blockchain-verified traceability for every bean",
+    subtitle: "Blockchain-verified traceability from Ethiopian farms to your roastery",
   },
 ];
 
@@ -52,7 +52,7 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm font-medium text-muted-foreground">
-              The Future of Coffee
+              Ethiopian Green Coffee Specialists
             </span>
           </div>
 

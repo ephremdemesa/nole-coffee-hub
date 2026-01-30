@@ -4,29 +4,29 @@ import qcLabImage from "@/assets/qc-lab.jpg";
 const supplyChainItems = [
   {
     icon: MapPin,
-    title: "Direct Sourcing",
-    description: "Direct partnerships with partner farms across premium coffee-growing regions worldwide.",
-    metric: "15+ Partner Farms",
+    title: "Direct Sourcing from Ethiopia",
+    description: "Exclusive partnerships with Ethiopian coffee farms in Yirgacheffe, Sidamo, and Guji regions.",
+    metric: "200+ Containers/Year",
     color: "from-secondary to-secondary/80",
   },
   {
     icon: CheckCircle,
     title: "Operational Grading & QC Hub",
-    description: "State-of-the-art quality control with meticulous grading and analysis.",
+    description: "State-of-the-art quality control with meticulous grading and cupping analysis.",
     metric: "100% Quality Tested",
     color: "from-accent to-accent/80",
   },
   {
     icon: Clock,
     title: "On-Time Delivery",
-    description: "Reliable logistics ensuring your coffee arrives exactly when you need it.",
+    description: "Reliable logistics from Ethiopia to US ports, directly to your roastery.",
     metric: "≥95% On-Time Rate",
     color: "from-tech to-tech/80",
   },
   {
     icon: Truck,
-    title: "Reduced Handling Cost",
-    description: "Streamlined operations that pass savings directly to you.",
+    title: "Direct to Roasters",
+    description: "Eliminating middlemen to deliver premium Ethiopian green coffee at competitive prices.",
     metric: "30% Cost Reduction",
     color: "from-coffee to-coffee/80",
   },
@@ -42,10 +42,10 @@ export function SupplyChainSection() {
             Integrated Supply Chain
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            From Origin to Destination
+            Ethiopia to USA, Direct to Your Roastery
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our vertically integrated supply chain ensures quality, transparency, and efficiency at every step.
+            We import 200+ containers of premium Ethiopian green coffee annually and distribute directly to roasters across the United States.
           </p>
         </div>
 

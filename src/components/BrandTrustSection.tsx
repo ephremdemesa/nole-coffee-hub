@@ -74,15 +74,14 @@ export function BrandTrustSection() {
                 From Passion to Purpose
               </h3>
               <p className="text-muted-foreground mb-6">
-                Nole Coffee, INC was born from a simple belief: that great coffee should be transparent, 
-                traceable, and fair for everyone involved. From the farmers who nurture each cherry to 
-                the roasters who unlock their potential, we're building a coffee ecosystem that values 
-                every link in the chain.
+                Nole Coffee, INC bridges Ethiopian coffee excellence with American roasters. We import 
+                over 200 containers of premium green coffee annually from Ethiopia's renowned regions—Yirgacheffe, 
+                Sidamo, Guji, and beyond—delivering directly to roasters across the United States.
               </p>
               <p className="text-muted-foreground mb-8">
-                Our integration of blockchain technology isn't just about innovation—it's about 
-                accountability. When you source through Nole Coffee, you're not just buying beans; 
-                you're investing in a more equitable coffee future.
+                Our blockchain-powered technology platform ensures complete traceability from Ethiopian 
+                farms to your roastery. When you partner with Nole Coffee, you gain direct access to 
+                exceptional origins with full transparency and competitive pricing.
               </p>
               <a
                 href="#"

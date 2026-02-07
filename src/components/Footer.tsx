@@ -96,7 +96,7 @@ export function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+        <div id="contact" className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row gap-6 md:gap-12">
             <a href="mailto:hello@nolecoffee.com" className="flex items-center gap-2 text-primary-foreground/60 hover:text-primary-foreground transition-colors">
               <Mail className="w-4 h-4" />

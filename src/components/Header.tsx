@@ -62,10 +62,13 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className={`hover:opacity-90 transition-opacity ${
-            isScrolled ? "bg-gradient-coffee" : "bg-white text-foreground hover:bg-white/90"
-          }`}>
-            Contact Us
+          <Button
+            asChild
+            className={`hover:opacity-90 transition-opacity ${
+              isScrolled ? "bg-gradient-coffee" : "bg-white text-foreground hover:bg-white/90"
+            }`}
+          >
+            <a href="#contact">Contact Us</a>
           </Button>
         </div>
 
@@ -96,8 +99,8 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <Button className="bg-gradient-coffee hover:opacity-90 transition-opacity w-full mt-4">
-              Contact Us
+            <Button asChild className="bg-gradient-coffee hover:opacity-90 transition-opacity w-full mt-4">
+              <a href="#contact">Contact Us</a>
             </Button>
           </nav>
         </div>

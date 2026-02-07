@@ -26,17 +26,17 @@ export function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-md py-3"
-          : "bg-transparent py-5"
+          : "bg-foreground/20 backdrop-blur-sm py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-gradient-coffee flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-lg">N</span>
+          <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center">
+            <span className="text-foreground font-display font-bold text-lg">N</span>
           </div>
           <span className={`font-display text-xl font-semibold transition-colors ${
-            isScrolled ? "text-foreground" : "text-foreground"
+            isScrolled ? "text-foreground" : "text-white"
           }`}>
             Nole Coffee
           </span>
@@ -48,7 +48,11 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className={`text-sm font-medium transition-colors relative group ${
+                isScrolled
+                  ? "text-muted-foreground hover:text-foreground"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               {link.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300" />
@@ -58,7 +62,9 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="bg-gradient-coffee hover:opacity-90 transition-opacity">
+          <Button className={`hover:opacity-90 transition-opacity ${
+            isScrolled ? "bg-gradient-coffee" : "bg-white text-foreground hover:bg-white/90"
+          }`}>
             Contact Us
           </Button>
         </div>
@@ -69,9 +75,9 @@ export function Header() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className="w-6 h-6 text-foreground" />
+            <X className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
           ) : (
-            <Menu className="w-6 h-6 text-foreground" />
+            <Menu className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-white"}`} />
           )}
         </button>
       </div>

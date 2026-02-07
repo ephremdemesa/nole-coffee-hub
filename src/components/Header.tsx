@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ContactModal } from "@/components/ContactModal";
 
 const navLinks = [
   { href: "#supply-chain", label: "Supply Chain" },
@@ -62,14 +63,15 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button
-            asChild
-            className={`hover:opacity-90 transition-opacity ${
-              isScrolled ? "bg-gradient-coffee" : "bg-white text-foreground hover:bg-white/90"
-            }`}
-          >
-            <a href="#contact">Contact Us</a>
-          </Button>
+          <ContactModal>
+            <Button
+              className={`hover:opacity-90 transition-opacity ${
+                isScrolled ? "bg-gradient-coffee" : "bg-white text-foreground hover:bg-white/90"
+              }`}
+            >
+              Contact Us
+            </Button>
+          </ContactModal>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -99,9 +101,11 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="bg-gradient-coffee hover:opacity-90 transition-opacity w-full mt-4">
-              <a href="#contact">Contact Us</a>
-            </Button>
+            <ContactModal>
+              <Button className="bg-gradient-coffee hover:opacity-90 transition-opacity w-full mt-4">
+                Contact Us
+              </Button>
+            </ContactModal>
           </nav>
         </div>
       )}

@@ -65,7 +65,7 @@ export function HeroSection() {
           </h1>
 
           {/* Dynamic Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
+          <p className="text-xl md:text-2xl text-white mb-4 max-w-2xl mx-auto opacity-0 animate-fade-in drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
             {heroSlides[currentSlide].subtitle}
           </p>
 
